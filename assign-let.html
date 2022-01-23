@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Q1 -->
+    <script>
+        let x = "John Doe";
+        let x = 0;
+    </script>
+
+
+    <!-- Q2 -->
+    <script>
+        var x = "John Doe";
+        var x = 0;
+    </script>
+
+
+    <!-- Q3 -->
+    <script>
+        {
+    var x = 2;
+        }
+    </script>
+
+
+    <!-- Q4 Global Scope example-->
+    <script>
+        let x =20;   
+        document.write("Outside the function x = " + x);   
+    
+        function show(){   
+        document.write("Inside the function x = " + x);   
+        }   
+    show();
+
+    </script>
+
+
+    <!-- Q5 Function Scope example -->
+    <script>
+        function show(){   
+        let num = 15;   
+        document.write("Inside the function num = " + num);   
+        }   
+        show();   
+        document.write("Outside the function num = " + num);
+
+    </script>
+
+
+    <!-- Q6 Block Scope example -->
+    <script>
+        {   
+        let num = 30;   
+        document.write("Inside the function num = " + num);   
+    }   
+    document.write("<br> Outside the function num = " + num);
+
+    </script>
+
+
+    <!-- Q7 Redeclaring variable in different blocks -->
+    <script>
+        let num = 23;
+        { 
+        let num = 15; 
+        document.write("num inside the function = " + num); 
+        } 
+        
+        document.write("num outside the function = " + num); 
+    </script> 
+
+
+    <!-- Q8 How let is different from the var keyword? -->
+    <script>
+        function checkGlobalScope() {  
+            
+            
+            document.write('Value of x before the block: ' + x);  
+            {  
+                var x = 20;  
+                xx = x + 8;  
+            }  
+                
+            document.write('<br> Value of x after the block: ' + x);  
+            }  
+            
+            
+            checkGlobalScope()
+    </script>
+
+</body>
+</html>

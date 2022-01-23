@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li id="F1">Apple</li>
+        <li class="head">Mango</li>
+        <li class="head">Kiwi</li>
+        <li id="F2">Grapes</li>
+    </ul>
+    <button onclick="check()">click me</button>
+    <h1 onmouseover="hello()">on mouse over</h1>
+    <h1 onmouseover="hello()">on mouse out</h1>
+    
+    
+    <script>
+
+        function check(){
+        x=document.getElementById("F1");
+        console.log(x.innerHTML);
+
+        y=document.getElementsByClassName("head");
+        console.log(y[0].innerHTML);
+        console.log(y[1].innerHTML);
+
+        z=document.getElementById("F2");
+        console.log(z.innerHTML);
+    }
+    function hello(){
+        alert ("Hello");
+    }
+
+    </script>
+</body>
+</html>

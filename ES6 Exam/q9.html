@@ -1,0 +1,19 @@
+Q9. Find sum of numbers with Rest Parameters?
+Ans. 
+<html>
+    <body>
+        <script>
+            function sum(...args){
+                let sum = 0;
+    
+                for (s of args){
+                sum += s;
+                }
+                return sum;
+            }
+            let x= sum(4,9,15,25,77);
+            console.log(x);
+    
+        </script>
+    </body>
+</html>

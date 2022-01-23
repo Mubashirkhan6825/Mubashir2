@@ -1,0 +1,25 @@
+12) Write a JavaScript program to calculate the area and perimeter of a circle
+Using object.
+Ans. 
+<html>
+    <body>
+        <script>
+            let circle = {
+                radius:20,
+                area:function(){
+                    return this.radius*this.radius*3.142;
+                },
+                perimeter:function(){
+                    return 2*3.142*this.radius;
+                }
+            }
+            console.log(circle.area());
+            console.log(circle.perimeter());
+            
+            // change the radius
+            circle.radius=12;
+            console.log(circle.area());
+            console.log(circle.perimeter());
+        </script>
+    </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        1st number: <input type="text" id="firstnumber"><br>
+        2nd number: <input type="text" id="secondnumber"><br>
+        <input type="submit" onclick="multiplyBy()" value="Multiply">  <input type="submit" onclick="divideby()" value="Divide">
+    </form>
+    <p>The Result is : <br>
+        <span id = "result"></span>
+        </p>
+        
+
+    <script>
+
+    // Q.1 What are scopes in javascript with one example?
+    // Ans.
+    // Scope determine the accessibility of variable to javascript
+    // types: Block scope, 
+    //        global scope, 
+    //        function scope
+    //        1. Block Scope: Variables declared inside a {} braces is known as block scope.
+    //        for ex- {
+    //                 var x = 2;
+    //                 }
+
+    //        2. Global scope: The variables declared with var, let and const  outside a block is known as block scope.
+    //        for ex-  let x =2;
+    //                 var x = 1;
+    //                 const x=3;
+
+    //        3. Function scope: The variables which declared  inside a function is known as function scope.
+    //        for ex- function myFunction() {
+    //                     let c=30;   
+    //                 }
+
+    // Q.2 What are javascript datatypes write with one example?
+    // javascript datatypes: javascript provide different data types to hold different types of values.
+
+    //     1. Primitive datatype: string, number, boolean, symbol.
+
+    //     2. Non-primitive: object, array
+
+    // Q.3 
+//     function multiplyBy()
+//     {
+//         num1 = document.getElementById("firstNumber").value;
+//         num2 = document.getElementById("secondNumber").value;
+//         document.getElementById("result").innerHTML = num1 * num2;
+//     }
+//     function divideBy() 
+// { 
+//         num1 = document.getElementById("firstNumber").value;
+//         num2 = document.getElementById("secondNumber").value;
+// document.getElementById("result").innerHTML = num1 / num2;
+// }
+
+
+    // Q.4 
+    // Ans. 
+    
+    // add= (x,y,z) =>{
+    //     let p=x+y+z;
+
+    //     return p;
+    // }
+    // let m=add(10,20,30);
+    // console.log(m);
+
+    
+    
+
+
+        // Q.5	Print “hello world” 100 time with all Loops?
+        
+        // using for loop
+        // for(let i=1; i<100; i++){
+        //     document.write("Hello World");
+        // }
+
+        // using while loop
+        // let i=0;
+        // while(i<=100){
+        //     document.write("Hello World");
+        //     i++;
+        // }
+
+        // using do while loop
+
+        // const c=100;
+        // let i=0;
+        // do{
+        //     document.write("Hello World");
+        //     i++;
+        // }
+        // while(i<=c);
+
+        // Q.7 What is Array definition and give one example?
+
+        // Ans.
+            // Array is a collection of data that can include data types.
+            // for ex. 
+
+            // let data =['car', 'bike', 'scooty', 'bicycle'];
+
+            // console.log(data);
+
+        // Q.8 What is Object definition and give one example?
+        // Ans. An object is an unordered collection of key value pairs.
+        // for ex-  const person = {firstname:"Moin", lastname:"Khan", Age:"22", eyecolor:"black" }; 
+        
+        // Q.9 What is conditional statement?
+        // Ans. Conditional Statements: conditional statements are used to perform different actions based on different conditions.
+        // “If” statements: where if a condition is true it is used to specify execution for a block of code. 
+        // “Else” statements: where if the same condition is false it specifies the execution for a block of code.
+
+        // Q.10 
+        // Ans.
+        
+
+            
+
+        
+
+    </script>
+</body>
+</html>

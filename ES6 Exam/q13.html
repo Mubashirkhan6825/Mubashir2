@@ -1,0 +1,43 @@
+Q13. Explain Callback function with example?
+Ans. Callback function:
+A callback is a function passed as an argument to another function.
+This technique allows a function to call another function.
+A callback function can run after another function has finished.
+
+for example:
+<html>
+    <body>
+        <script>
+            // function
+                function greet(name) {
+                    console.log('Hi' + ' ' + name);
+                }
+
+                greet('Peter'); // Hi Peter
+        </script>
+    </body>
+</html>
+
+In the above program, a string value is passed as an argument to the greet() function.
+
+In JavaScript, you can also pass a function as an argument to a function. This function that is passed as an argument inside of another function is called a callback function. For example,
+
+<html>
+    <body>
+        <script>
+            // function
+            function greet(name, callback) {
+                console.log('Hi' + ' ' + name);
+                callback();
+            }
+
+            // callback function
+            function callMe() {
+                console.log('I am callback function');
+            }
+
+            // passing function as an argument
+            greet('Peter', callMe);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Q1 -->
+    <script>
+        function multiply(a,b=1){
+            return a*b;
+        }
+        console.log(multiply(5,2));
+
+        console.log(multiply(5));
+    </script>
+
+    <!-- Q2 -->
+    <script>
+        function greet(name,greeting,message= greeting+''+name){
+            return [name,greeting,message]
+        }
+        greet('Moin', 'hi')
+        greet('Moin', 'hi', 'Happy Birthday')
+
+    </script>
+
+
+    <!-- Q3 -->
+    <script>
+        function say (message='Hi'){
+            console.log(message);
+        }
+        say();
+        say('Hello');
+
+    </script>
+
+
+    <!-- Q4 -->
+    <script>
+        function createDiv(height = '100px', width = '100px', border = 'solid 1px red'){
+            let div = document.createElement('div');
+
+            div.style.height = height;
+            div.style.width = width;
+            div.style.border = border;
+            document.body.appendChild(div);
+            return div;
+
+        }
+        createDiv();
+        createDiv(undefined, undefined,'soild 5px blue');
+
+    </script>
+
+
+    <!-- Q5 -->
+    <script>
+        function date(d=today()){
+            console.log(d);
+        }
+        function today(){
+            return (new date()).toLocalDateString("en-us");
+        }
+        date();
+        
+    </script>
+
+
+    <!-- Q6 -->
+    <script>
+        function add(x=1, y=x, z= x+y){
+            return x+y+z;
+        }
+        console.log(add());
+    </script>
+
+
+    <!-- Q7 -->
+    <script>
+        let taxRate = () => 0.1;
+        let getPrice = function ( price, tax = price * taxRate() ){
+            return price + tax ;
+        }
+
+        let fullPrice = getPrice(100);
+        console.log(fullPrice);
+    </script>
+
+
+    <!-- Q8 -->
+    <script>
+        function add (x, y=1, z=2){
+            console.log(arguments.length);
+            return x + y + z;
+        }
+        add(10);
+        add(10,20);
+        add(10,20,30);
+
+    </script>
+
+
+    <!-- Q9 -->
+    <script>
+        function sum (x=3, y=5){
+            z= x+y;
+            return z; 
+        }
+        console.log(sum(15,5));
+        console.log(sum(7));
+        console.log(sum());
+    </script>
+
+
+    <!-- Q10 -->
+    <script>
+        const sum = () => 15;
+        const calculate = function(x, y =x* sum()){
+            return x+y;
+        }
+        const result = calculate(10);
+        console.log(result);
+
+        
+    </script>
+
+
+    <!-- Q11 -->
+    <script>
+        function myFunction(x, y =2){
+            return x * y;
+        }
+        document.getElementById("demo").innerHTML = myFunction(4);
+    </script>
+
+</body>
+</html>

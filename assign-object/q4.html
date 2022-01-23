@@ -1,0 +1,34 @@
+4) What Is User-defined Objects?
+    Answer :
+    User-Defined Objects: All user-defined objects and built-in objects are descendants of an object called Object.
+    The new Operator: The new operator is used to create an instance of an object. To create an object, the new operator is followed by the constructor method.
+    In the following example, the constructor methods are Object(), Array(), and Date(). These constructors are built-in JavaScript functions.
+    var employee = new Object();
+    var books = new Array("C++", "Perl", "Java");
+    var day = new Date("August 15, 1947");
+
+    The Object() Constructor: A constructor is a function that creates and initializes an object. JavaScript provides a special constructor function called Object() to build the object. The return value of the Object() constructor is assigned to a variable.
+    The variable contains a reference to the new object. The properties assigned to the object are not variables and are not defined with the var keyword.
+
+    Example 1: Try the following example; it demonstrates how to create an Object.
+    <html>
+       <head>
+          <title>User-defined objects</title>
+          
+          <script type="text/javascript">
+             var book = new Object();   // Create the object
+             book.subject = "Perl"; // Assign properties to the object
+             book.author  = "Mohtashim";
+          </script>
+          
+       </head>
+       
+       <body>
+       
+          <script type="text/javascript">
+             document.write("Book name is : " + book.subject + "<br>");
+             document.write("Book author is : " + book.author + "<br>");
+          </script>
+       
+       </body>
+    </html>

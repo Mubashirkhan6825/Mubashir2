@@ -1,0 +1,21 @@
+Q6. Convert the below expression Convert into an Arrow function?
+
+let numbers = [4,2,6];
+numbers.sort(function(a,b){
+return b - a;
+});
+console.log(numbers);
+
+Ans.
+<html>
+    <body>
+        <script>
+            let numbers = [4,2,6];
+            numbers.sort = (a,b) => {
+                return b - a;
+            }
+console.log(numbers);
+
+        </script>
+    </body>
+</html>
